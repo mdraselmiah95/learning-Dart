@@ -1,12 +1,11 @@
 <div align="center">
 
-<img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" height="80" alt="Dart Logo" />
+<img src="https://dart.dev/assets/img/logo/dart-192.svg" height="100" alt="Dart Logo" />
 
 # Basic Dart — Learning Journey
 
 ![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-coming_soon-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 > Dart fundamentals → standard level → Flutter
 
@@ -16,29 +15,29 @@
 
 ## Roadmap
 
-| Phase | Topic | Status |
-|-------|-------|--------|
-| Phase 1 | Dart Fundamentals (Lessons 1–10) | 🔄 In Progress |
-| Phase 2 | Dart Standard Level (Lessons 11–18) | ⏳ Upcoming |
-| Phase 3 | Flutter Basics (F-1 to F-10) | ⏳ Upcoming |
-| Phase 4 | Flutter Standard (F-11 to F-16) | ⏳ Upcoming |
+| Phase | Topic |
+|-------|-------|
+| Phase 1 | Dart Fundamentals (Lessons 1–10) |
+| Phase 2 | Dart Standard Level (Lessons 11–18) |
+| Phase 3 | Flutter Basics (F-1 to F-10) |
+| Phase 4 | Flutter Standard (F-11 to F-16) |
 
 ---
 
 ## Lessons
 
-| Lesson | Topic | Status |
-|--------|-------|--------|
-| lesson-1 | Dart Fundamentals Overview | ✅ Done |
-| lesson-2 | Variables & All Types | ✅ Done |
-| lesson-3 | Operators & Expressions | ⏳ |
-| lesson-4 | Strings & String Methods | ⏳ |
-| lesson-5 | Control Flow | ⏳ |
-| lesson-6 | Loops | ⏳ |
-| lesson-7 | Functions | ⏳ |
-| lesson-8 | Collections (List / Map / Set) | ⏳ |
-| lesson-9 | Null Safety | ⏳ |
-| lesson-10 | OOP | ⏳ |
+| Lesson | Topic |
+|--------|-------|
+| lesson-1 | Dart Fundamentals Overview |
+| lesson-2 | Variables & All Types |
+| lesson-3 | Operators & Expressions |
+| lesson-4 | Strings & String Methods |
+| lesson-5 | Control Flow |
+| lesson-6 | Loops |
+| lesson-7 | Functions |
+| lesson-8 | Collections (List / Map / Set) |
+| lesson-9 | Null Safety |
+| lesson-10 | OOP |
 
 ---
 

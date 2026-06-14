@@ -64,4 +64,31 @@ void main() {
   String message = age >= 18 && hasLicense ? 'Can drive' : 'Cannot drive';
 
   print(message);
+
+  String month = 'July';
+
+  switch (month) {
+    case 'December':
+    case 'January':
+    case 'February':
+      print('Winter');
+      break;
+    case 'March':
+    case 'April':
+    case 'May':
+      print('Spring');
+      break;
+    case 'June':
+    case 'July':
+    case 'August':
+      print('Summer');
+      break;
+    case 'September':
+    case 'October':
+    case 'November':
+      print('Autumn');
+      break;
+    default:
+      print('Invalid month');
+  }
 }

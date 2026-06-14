@@ -8,6 +8,20 @@ void checkDrivingEligibility(int age, bool hasLicense) {
   }
 }
 
+void checkDiscount(bool isMember, double total) {
+  double discount;
+  if (isMember && total > 100) {
+    discount = 0.2; // 20% discount
+  } else if (isMember) {
+    discount = 0.1; // 10% discount
+  } else {
+    discount = 0.0; // no discount
+  }
+
+  double finalPrice = total - (total * discount);
+  print('Final price: $finalPrice');
+}
+
 void main() {
   int seconds = 3750;
   int hours = seconds ~/ 3600;
@@ -91,4 +105,7 @@ void main() {
     default:
       print('Invalid month');
   }
+
+  // ==========================================
+  checkDiscount(true, 150.0);
 }

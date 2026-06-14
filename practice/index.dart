@@ -49,4 +49,19 @@ void main() {
       break;
     default:
   }
+
+  //Ternary — one-line if/else
+
+  int ageOne = 20;
+
+  String result = ageOne >= 18 ? 'Adult' : 'Minor';
+
+  print(result);
+
+  int age = 20;
+  bool hasLicense = true;
+
+  String message = age >= 18 && hasLicense ? 'Can drive' : 'Cannot drive';
+
+  print(message);
 }

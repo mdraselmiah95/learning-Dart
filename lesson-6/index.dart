@@ -36,7 +36,18 @@ int square(int x) => x * x;     // => means "return this"
 
   // Anonymous Functions
 
-  var multiply = (int a, int b) => a * b;
+  var multiplyNum = (int a, int b) => a * b;
 
-  print(multiply(3,4))
+  print(multiplyNum(3,4));
+
+
+  // Higher-Order Functions (A function that can take another function as a parameter or return a function.)
+
+List<int> numbers =[1,2,3,4,5,6,7,8];
+
+List<int> doubleNumbers =numbers.map((n)=> n*2).toList();
+print(doubleNumbers);
+
+
+
 }

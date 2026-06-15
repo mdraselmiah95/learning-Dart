@@ -58,4 +58,9 @@ List<Map<String, dynamic>> CoolUsers = [
 
 var activeUsers=CoolUsers.where((user)=> user['active']==true).toList();
 print(activeUsers);
+
+
+List<int> cartPrices = [500, 300, 200];
+int total =cartPrices.reduce((a,b)=> a+b);
+print(total);
 }

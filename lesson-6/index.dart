@@ -63,4 +63,18 @@ print(activeUsers);
 List<int> cartPrices = [500, 300, 200];
 int total =cartPrices.reduce((a,b)=> a+b);
 print(total);
+
+// map()     change/transform each item
+// where()   filter items
+// reduce()  make one final value
+
+  List<int> mixNumbers = [1, 2, 3, 4, 5];
+  var result = mixNumbers
+      .where((n) => n % 2 == 0) // [2, 4]
+      .map((n) => n * 10)       // [20, 40]
+      .reduce((a, b) => a + b); // 60
+
+  print(mixNumbers);
+
+// Use toList() when you need the final result as a List.
 }

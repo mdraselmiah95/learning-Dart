@@ -32,4 +32,11 @@ int square(int x) => x * x;     // => means "return this"
   createUser(name: 'Alice', age: 30);
 
   orderCoffee(type: 'Latte');
+
+
+  // Anonymous Functions
+
+  var multiply = (int a, int b) => a * b;
+
+  print(multiply(3,4))
 }

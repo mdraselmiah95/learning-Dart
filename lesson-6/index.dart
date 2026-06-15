@@ -50,4 +50,12 @@ print(doubleNumbers);
 
 
 
+List<Map<String, dynamic>> CoolUsers = [
+  {'name': 'Rasel', 'active': true},
+  {'name': 'John', 'active': false},
+  {'name': 'Alice', 'active': true},
+];
+
+var activeUsers=CoolUsers.where((user)=> user['active']==true).toList();
+print(activeUsers);
 }

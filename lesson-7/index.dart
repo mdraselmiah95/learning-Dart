@@ -14,4 +14,16 @@ void main() {
   print(fruits);
 
   // Set Essentials
+  Map<String, int> marks = {"Math": 89};
+
+  marks["English"] = 85;
+  marks['History'];
+  marks.keys;
+  marks.values;
+
+  marks.containsKey("Math");
+
+  print(marks.containsKey("Science"));
+
+  print(marks);
 }

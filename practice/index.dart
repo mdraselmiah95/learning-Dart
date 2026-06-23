@@ -132,4 +132,36 @@ void main() {
   final productNames = products1.map((p) => p["name"]).toList();
 
   print(productNames);
+
+// from a mixed list, keep only String values.
+  List<dynamic> items = [
+    "Apple",
+    10,
+    "Banana",
+    true,
+    "Mango",
+    null,
+  ];
+
+  List<String> clean = items.whereType<String>().toList();
+
+  print(clean);
+
+  List<dynamic> values = [1, "Klassy", 2.5, "Flutter", false, "Dart"];
+
+  List<String> strings = values.whereType<String>().toList();
+
+  List<int> numbers = values.whereType<int>().toList();
+
+  print(strings);
+
+  print(numbers);
+
+  Map<String, dynamic> json = {
+    "tags": ["skincare", 10, "sunscreen", null, true],
+  };
+
+  List<String> tags = (json["tags"] as List).whereType<String>().toList();
+
+  print(tags);
 }

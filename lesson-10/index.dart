@@ -9,6 +9,26 @@ class Animal {
   }
 }
 
+mixin CanFly {
+  void fly() {
+    print('Flying!');
+  }
+}
+
+mixin CanSwim {
+  void swim() {
+    print('Swimming!');
+  }
+}
+
+class Duck extends Animal with CanFly, CanSwim {
+  Duck(super.name);
+}
+
+class Fish extends Animal with CanSwim {
+  Fish(super.name);
+}
+
 class Dog extends Animal {
   String breed;
 
@@ -20,7 +40,16 @@ class Dog extends Animal {
 }
 
 void main() {
+  Duck duck = Duck("Donald");
   Dog rex = Dog("Rex", "Beagle");
+  Fish fish = Fish("Nemo");
+
+  duck.eat();
+  duck.fly();
+  duck.swim();
+
+  fish.eat();
+  fish.swim();
 
   rex.eat();
   rex.fetch();

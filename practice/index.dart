@@ -122,4 +122,14 @@ void main() {
       .toList();
 
   print(expensiveProducts);
+
+  final List<Map<String, dynamic>> products1 = [
+    {"name": "Sunscreen", "price": 1200},
+    {"name": "Facewash", "price": 600},
+    {"name": "Serum", "price": 1500},
+  ];
+
+  final productNames = products1.map((p) => p["name"]).toList();
+
+  print(productNames);
 }

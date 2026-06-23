@@ -5,9 +5,15 @@ class Person {
   Person(this.name, this.age);
 
   void sayHello() {
-    print('Hi, I am $name');
+    print('Hi, I am $name and I am $age years old');
   }
 }
+
+// class ClassName {
+//    properties
+//    constructor
+//    methods
+// }
 
 void main() {
 // OOP: Classes & Objects

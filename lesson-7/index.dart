@@ -35,7 +35,7 @@ void main() {
   var combined = [...listA, ...listB];
   print(combined);
 
-  bool isLoggedIn = true;
+  bool isLoggedIn = false;
 
   var menu = ["Burger", if (isLoggedIn) "Member Deal"];
   print(menu);

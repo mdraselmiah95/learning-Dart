@@ -26,6 +26,13 @@ Future<Map<String, dynamic>> fetchProduct() async {
   };
 }
 
+Stream<int> countdown(int from) async* {
+  for (int i = from; i >= 1; i--) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
 void main() async {
   print("Start");
 
@@ -58,4 +65,12 @@ void main() async {
   } finally {
     print("Request finished");
   }
+
+  // Future gives one value later.
+// Stream gives many values over time.
+
+  await for (int n in countdown(3)) {
+    print(n);
+  }
+  print("Done");
 }

@@ -26,4 +26,17 @@ void main() {
   print(marks.containsKey("Science"));
 
   print(marks);
+
+  // Spread & Collection-if/for
+
+  var listA = ['Apple', 'Banana'];
+
+  var listB = ['Mango', 'Papaya'];
+  var combined = [...listA, ...listB];
+  print(combined);
+
+  bool isLoggedIn = true;
+
+  var menu = ["Burger", if (isLoggedIn) "Member Deal"];
+  print(menu);
 }

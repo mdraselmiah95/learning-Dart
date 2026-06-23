@@ -58,4 +58,25 @@ void main() {
   var total = numbers3.reduce((a, b) => a + b);
 
   print(total);
+
+  //fold() — safer total with starting value
+  List<int> numbers4 = [10, 20, 30];
+
+  var total4 = numbers4.fold(0, (sum, n) => sum + n);
+
+  print(total4);
+
+  // any() — check if at least one item matches
+  List<int> numbers5 = [10, 20, 30];
+
+  var result5 = numbers5.any((n) => n > 25);
+
+  print(result5);
+
+  //every() — check if all items match
+  List<int> numbers6 = [10, 20, 30];
+
+  var result6 = numbers6.every((n) => n > 5);
+
+  print(result6);
 }

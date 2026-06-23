@@ -108,4 +108,18 @@ void main() {
 
   // ==========================================
   checkDiscount(true, 150.0);
+
+  // power methods
+  List<Map<String, dynamic>> products = [
+    {"name": "Sunscreen", "price": 1200},
+    {"name": "Facewash", "price": 600},
+    {"name": "Serum", "price": 1500},
+  ];
+
+  var expensiveProducts = products
+      .where((product) => product["price"] > 1000)
+      .map((product) => product["name"])
+      .toList();
+
+  print(expensiveProducts);
 }

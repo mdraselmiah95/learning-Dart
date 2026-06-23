@@ -39,4 +39,23 @@ void main() {
 
   var menu = ["Burger", if (isLoggedIn) "Member Deal"];
   print(menu);
+
+  //Power Methods
+  List<int> numbers = [1, 2, 3, 4];
+
+  var result = numbers.map((n) => n * 2).toList();
+
+  print(result);
+
+  List<int> numbers1 = [10, 15, 20, 25, 30];
+
+  var result1 = numbers1.where((n) => n > 20).toList();
+
+  print(result1);
+
+  List<int> numbers3 = [10, 20, 30];
+
+  var total = numbers3.reduce((a, b) => a + b);
+
+  print(total);
 }
